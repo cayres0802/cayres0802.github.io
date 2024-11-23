@@ -5,61 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="js.js">
     <title>Portfolio</title>
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <span>clara</span>
+                <a href="#"><span>clara</span></a>
             </div>
             <div class="links">
                 <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <!-- <div class="link"><a href="#services">Services</a></div> -->
+                <div class="link"><a href="#contact">Contact</a></div>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <!-- <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i> -->
     </div> 
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div> 
     </nav>
+    <button class="hamburg">
+        <div class="bar"></div>
+
+    <nav class="mobile-nav">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <!-- <a href="#services">Services</a> -->
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    </button>
     <section>
         <div class="main-container">
             <div class="image">
                 <img src="imagens/eu.jpg" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left">
-                    Hey, I'm
+                <h1>
+                    Hey, It's
                     <span>Clara!</span>
                 </h1>
                 <div class="typewriter">
                     I'm a
-                    <span class="typewriter-text">aaa</span>
+                    <span class="typewriter-text"><span></span>
                     <label for=""></label>
                 </div>
-                <p class="I">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere orci. Curabitur lectus dui, tempor elementum venenatis a, condimentum et ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel lectus lobortis, vehicula ipsum et, pulvinar felis. Ut facilisis ultricies metus. Morbi pulvinar nisi sit amet ipsum pretium, fermentum suscipit risus sollicitudin. Sed nec condimentum ligula. Suspendisse potenti. Aenean aliquet venenatis felis non lobortis. Nulla egestas id nisi at gravida. Ut vitae tellus odio. Nulla facilisi.</p>
+                <p class="I">I am a Software Engineering student in my third semester, passionate about technology and problem-solving. My professional goal is to become a skilled developer, specializing in emerging technologies like AI, machine learning, and cloud computing.</p>
                 <div class="social-links">
-                    <a href="#">
+                    <a href="https://github.com/cayres0802">
                        <i class="fa-brands fa-github"></i> 
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/maria-clara-cayres-de-almeida/">
                         <i class="fa-brands fa-linkedin"></i> 
                      </a>
                 </div>
-                <div class="btn">
+                <!-- <div class="btn">
                     <button>Hire me</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -72,9 +76,15 @@
                 </div>
                 <div class="right">
                     <div class="topic">Developing is my passion</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere orci. Curabitur lectus dui, tempor elementum venenatis a, condimentum et ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel lectus lobortis, vehicula ipsum et, pulvinar felis. Ut facilisis ultricies metus. Morbi pulvinar nisi sit amet ipsum pretium, fermentum suscipit risus sollicitudin. Sed nec condimentum ligula. Suspendisse potenti. Aenean aliquet venenatis felis non lobortis. Nulla egestas id nisi at gravida. Ut vitae tellus odio. Nulla facilisi.</p>
+                    <p>I am passionate about programming and technology. Throughout my academic journey, I have gained proficiency in languages and tools like Python, SQL, HTML, CSS, and JavaScript, along with a strong foundation in algorithms, data structures, and software development principles.<br>
+
+                        In addition to my coursework, I actively seek opportunities to expand my skill set through personal projects, online courses, and coding challenges. My focus is on building robust and efficient solutions, with interests in web development, backend systems, and emerging technologies like artificial intelligence.<br>
+                        
+                        I am eager to grow professionally by applying my knowledge in real-world scenarios and collaborating on impactful projects.</p>
                     <div class="button">
-                        <button>Download CV</button>
+                        <a href="Documents/Curriculum Vitae - Maria Clara Cayres de Almeida.pdf" download>
+                            <button>Download CV</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -89,38 +99,42 @@
                     <div class="topic">
                         Skills Reflects Our Knowledge
                     </div>
-                    <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere orci. Curabitur lectus dui, tempor elementum venenatis a, condimentum et ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel lectus lobortis, vehicula ipsum et, pulvinar felis. Ut facilisis ultricies metus. Morbi pulvinar nisi sit amet ipsum pretium, fermentum suscipit risus sollicitudin. Sed nec condimentum ligula. Suspendisse potenti. Aenean aliquet venenatis felis non lobortis. Nulla egestas id nisi at gravida. Ut vitae tellus odio. Nulla facilisi.</p>
+                    <p data-aos="fade-right">I have developed a strong set of technical skills throughout my academic and personal projects. My expertise includes programming in Python, SQL, HTML, CSS, and JavaScript, with a focus on creating responsive and interactive web pages. I also have experience in designing and querying databases using SQL, ensuring efficient and well-structured data management.<br>
+
+                        In addition to my technical abilities, I am proficient in version control with Git and GitHub, enabling effective collaboration and code management in team environments. My problem-solving skills allow me to debug and optimize code efficiently, tackling complex challenges with confidence.<br>
+                        
+                        Beyond technical expertise, I value teamwork, clear communication, adaptability, and a constant eagerness to learn, which I believe are essential for success in any professional setting.</p>
                     <div class="experience">
-                        <div class="num">10</div>
+                        <div class="num"></div>
                         <div class="exp">
-                            Years Of<br/>
-                            Experience
+                            <br/>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="boxes">
                     <div class="box">
                         <div class="topic">HTML</div>
-                        <div class="per">90%</div>
+                        <div class="per">50%</div>
                     </div>
                     <div class="box">
                         <div class="topic">CSS</div>
-                        <div class="per">90%</div>
+                        <div class="per">50%</div>
                     </div>
                     <div class="box">
                         <div class="topic">JavaScript</div>
-                        <div class="per">90%</div>
+                        <div class="per">10%</div>
                     </div>
                     <div class="box">
                         <div class="topic">Python</div>
-                        <div class="per">90%</div>
+                        <div class="per">50%</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <div class="content">
             <div class="title"><span>My Services</span></div>
             <div class="boxes">
@@ -140,7 +154,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="contact" id="contact">
@@ -152,7 +166,9 @@
                 <div class="topic">Have Any Project?</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere orci. Curabitur lectus dui, tempor elementum venenatis a, condimentum et ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel lectus lobortis, vehicula ipsum et, pulvinar felis. Ut facilisis ultricies metus. Morbi pulvinar nisi sit amet ipsum pretium, fermentum suscipit risus sollicitudin. Sed nec condimentum ligula. Suspendisse potenti. Aenean aliquet venenatis felis non lobortis. Nulla egestas id nisi at gravida. Ut vitae tellus odio. Nulla facilisi.</p>
                 <div class="button">
-                    <button>Let's Chat</button>
+                    <a href="mailto:clara.cayres1205@gmail.com">
+                        <button>Send an Email</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -163,7 +179,7 @@
             <span>Created By <a href="#">cayres0802</a> | &copy; All Rights Reserved</span>
         </div>
     </footer>
-    
+    <script src="js.js"></script>
 </body>
 </html>
    
