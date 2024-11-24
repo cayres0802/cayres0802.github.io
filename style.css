@@ -701,4 +701,7 @@ footer .text span a:hover{
         object-fit: cover;
         border-radius: 12px;
     }
+    .hamburg{
+        margin-right: 20px;
+    }
 }
