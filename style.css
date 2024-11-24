@@ -10,7 +10,7 @@
 }
 
 html{
-    font-size: 90%;
+    font-size: 100%;
 }
 
 body{
@@ -421,7 +421,7 @@ section .button button{
     padding: 1rem 2.8rem;
     background-color: black;
     border-radius: 4rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: pink;
     letter-spacing: 0.3rem;
     font-weight: 600;
