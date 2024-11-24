@@ -10,7 +10,7 @@
 }
 
 html{
-    font-size: 70%;
+    font-size: 90%;
 }
 
 body{
@@ -385,18 +385,22 @@ section .title span::after{
     left: 50%;
     transform: translateX(-50%);
 }
-.about .about-details .left{
-    width: 45%;
+.about .about-details{
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
 }
-.about .left img{
+/* .about .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 12px;
-}
-.about-details .right{
+} */
+/* .about-details .right{
     width: 55%;
-}
+} */
 section .topic{
     color: white;
     font-size: 25px;
@@ -404,8 +408,10 @@ section .topic{
     margin-bottom: 10px;
 }
 .about-details .right p{
-    text-align: justify;
+    text-align: center;
     color: white;
+    display: flex;
+ 
 }
 section .button{
     margin: 16px 0;
