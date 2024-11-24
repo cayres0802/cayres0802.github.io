@@ -675,6 +675,9 @@ footer .text span a:hover{
     .contact .text{
         width: 100%;
     }
+    .hamburg{
+        margin-right: 30px;
+    }
     /* .content .typewriter-text span::after{
 
         height: 40px;
