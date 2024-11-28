@@ -72,11 +72,10 @@ nav a.active{
     border-bottom: 3px solid pink;
 } */
 
-.logo{
+.nav-container .logo{
     font-size: 3rem;
     color: pink;
-    font-weight: bold;
-    font-weight: 800;
+    font-weight: bold;  
     cursor: pointer;
     transition: 0.5s ease;
 }
@@ -139,8 +138,8 @@ nav a.active{
     display: block;
     width: 35px;
     cursor: pointer;
-    top: 10px;
-    right: 10px;
+    top: 25px;
+    right: 1%;
 
     appearance: none;
     background: none;
@@ -468,7 +467,7 @@ section .button button:hover{
 }
 .skills-details p{
     color: white;
-    text-align: justify;
+    text-align: center;
 }
 .skills .skills-details .experience{
 display: flex;
@@ -495,10 +494,12 @@ margin: 0 10px;
 .skills-details .box{
     width: calc(100%/2 - 20px);
     margin: 20px 0;
+    text-align: center;
 }
 .skills-details .boxes .topic{
     font-size: 20px;
     color: pink;
+    text-align: center;
 }
 .skills-details .boxes .per{
     font-size: 60px;
@@ -606,24 +607,15 @@ footer .text span a:hover{
         height: 350px;
         width: 350px;
     } */
-    .translate{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 10px 0 40%;
-        position: absolute;
-    }
-    .hamburg{
-        margin-right: 20px;
-    }
+
 }
 
 
 
 @media (max-width: 968px){
     nav .logo{
-        position: absolute;
-        top: 16px;
+        position:absolute ;
+        top: 13px;
         left: 15px;
         font-size: 3rem;
     }
@@ -662,12 +654,15 @@ footer .text span a:hover{
     .skills-details .text{
         width: 90%;
         margin-bottom: 50px;
+        text-align: center;
     }
     .skills-details .boxes{
         justify-content: center;
         align-items: center;
         width: 100%;
+        
     }
+
     .services .boxes .box{
         margin: 20px 0;
         width: 100%;
@@ -694,6 +689,9 @@ footer .text span a:hover{
     }
 }
 @media (max-width: 500px){
+    .nav-container{
+        width: 100%;
+    }
     .skills-details .boxes .per{
         font-size: 50px;
         color: pink;
@@ -704,7 +702,5 @@ footer .text span a:hover{
         object-fit: cover;
         border-radius: 12px;
     }
-    .hamburg{
-        margin-right: 40px;
-    }
+
 }
