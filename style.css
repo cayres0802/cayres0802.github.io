@@ -1,4 +1,10 @@
+
 @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
+:root{
+    --color1: rgb(86, 119, 185);
+    --color2: rgba(86, 119, 185, 0.5);
+    /* #ffbfca */
+}
 
 *{
     margin: 0;
@@ -29,13 +35,13 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: pink;
+    background: var(--color1);
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: pink;
+    background: var(--color1);
 }
 .translate{
     display: flex;
@@ -74,15 +80,15 @@ nav a.active{
 
 .nav-container .logo{
     font-size: 3rem;
-    color: pink;
+    color: var(--color1);
     font-weight: bold;  
     cursor: pointer;
     transition: 0.5s ease;
 }
 
 .logo span{
-    color: pink;
-    text-shadow: 0 0 10px #ffc0cb;
+    color: var(--color1);
+    text-shadow: 0 0 10px var(--color1);
 }
 
 .logo:hover{
@@ -122,7 +128,7 @@ nav a.active{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: pink;
+    background-color: var(--color1);
     transition: 0.2s linear;
 }
 
@@ -131,7 +137,7 @@ nav a.active{
 }
 
 .nav-container .links a:hover{
-    color: pink;
+    color: var(--color1);
 }
 .hamburg{
     position: absolute;
@@ -151,7 +157,7 @@ nav a.active{
     display: block;
     width: 100%;
     height: 5px;
-    background-color: pink;
+    background-color: var(--color1);
     margin: 6px 0px;
     transition: 0.4s;
     border-radius: 15%;
@@ -187,12 +193,12 @@ nav a.active{
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
-    background-color: rgba(255, 192, 203, 0.5);
+    background-color: var(--color2);
     color: white;
     text-decoration: none;
 }
 .mobile-nav a:hover{
-    background-color: rgba(255, 192, 203, 1);
+    background-color: var(--color2);
 }
 
 section{
@@ -213,7 +219,7 @@ section .main-container{
     height: 50vh;
     border-radius: 30%;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(255, 187, 228, 0.6);
+    box-shadow: 0 0 30px var(--color2);
 }
 
 .main-container .image img{
@@ -248,8 +254,8 @@ section .main-container{
 }
 
 .content h1 span{
-    color: pink;
-    text-shadow: 0 0 10px pink;
+    color: var(--color1);
+    text-shadow: 0 0 10px var(--color1);
 }
 
 .content .typewriter{
@@ -260,15 +266,15 @@ section .main-container{
 
 .content .typewriter-text{
     position: relative;
-    color: pink;
-    text-shadow: 0 0 10px pink;
+    color: var(--color1);
+    text-shadow: 0 0 10px var(--color1);
 }
 .content .typewriter-text span{
     position: relative;
 }
 .content .typewriter-text span::before{
     content: 'Software Engineer';
-    color: pink;
+    color: var(--color1);
     animation: words 20s infinite;
 }
 .content .typewriter-text span::after{
@@ -283,7 +289,7 @@ section .main-container{
 }
 @keyframes cursor{
     to{
-        border-left: 3px solid pink;
+        border-left: 3px solid var(--color1);
     }
 }
 
@@ -313,20 +319,20 @@ section .main-container{
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.18rem solid pink;
+    border: 0.18rem solid var(--color1);
     font-size: 1.36rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.2s linear;
-    color: pink;
+    color: var(--color1);
 }
 
 
 .social-links i:hover{
     scale: 1.3;
     color: black;
-    background-color: pink;
-    filter: drop-shadow(0 0 10px rgba(255, 192, 203, 0.8));
+    background-color: var(--color1);
+    filter: drop-shadow(0 0 10px --color2);
 
 }
 
@@ -336,20 +342,20 @@ section .main-container{
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: pink;
+    color: var(--color1);
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 0.18rem solid pink;
+    border: 0.18rem solid var(--color1);
     transition: 0.3s ease;
     cursor: pointer;
 }
 .content button:hover{
     scale: 1.1;
     color: black;
-    border: 0.18rem solid pink;
-    background-color: pink;
+    border: 0.18rem solid var(--color1);
+    background-color: var(--color1);
     font-weight: 700;
-    box-shadow: 0 0 20px rgba(255, 192, 203, 0.8); 
+    box-shadow: 0 0 20px var(--color2); 
 }
 section .content{
     width: 80%;
@@ -380,7 +386,7 @@ section .title span::after{
     position: absolute;
     height: 3px;
     width: 100%;
-    background: pink;
+    background: var(--color1);
     left: 0;
     bottom: 0;
 }
@@ -427,10 +433,10 @@ section .button button{
     background-color: black;
     border-radius: 4rem;
     font-size: 1rem;
-    color: pink;
+    color: var(--color1);
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 0.18rem solid pink;
+    border: 0.18rem solid var(--color1);
     transition: 0.3s ease;
     cursor: pointer;
 
@@ -446,8 +452,8 @@ section .button button{
     transition: all 0.4s ease; */
 }
 section .button button:hover{
-    border-color: pink;
-    background-color: pink;
+    border-color: var(--color1);
+    background-color: var(--color1);
     color: black;
 }
 
@@ -496,14 +502,14 @@ margin: 0 10px;
     margin: 20px 0;
     text-align: center;
 }
-.skills-details .boxes .topic{
+.skills-details .topic{
     font-size: 20px;
-    color: pink;
+    color: var(--color1);
     text-align: center;
 }
 .skills-details .boxes .per{
     font-size: 60px;
-    color: pink;
+    color: var(--color1)
 }
 .services .boxes{
     display: flex;
@@ -523,13 +529,13 @@ margin: 0 10px;
     transition: all 0.4s ease;
 }
 .services .boxes .box:hover{
-    background: rgba(255, 192, 203, 0.5); 
+    background: var(--color2); 
     color: white;
 }
 .services .boxes .box .icon{
     height: 50px;
     width: 50px;
-    background: pink;
+    background: var(--color1);
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
@@ -540,7 +546,7 @@ margin: 0 10px;
 }
 .boxes .box:hover .icon{
     background-color: white;
-    color: pink;
+    color: var(--color1);
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
@@ -564,7 +570,7 @@ margin: 0 10px;
     margin: auto;
 }
 footer{
-    background: pink;
+    background: var(--color1);
     padding: 15px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -694,7 +700,7 @@ footer .text span a:hover{
     }
     .skills-details .boxes .per{
         font-size: 50px;
-        color: pink;
+        color: var(--color1);
     }
     .about .left img{
         height: 300px;
