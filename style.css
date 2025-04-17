@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
 :root{
     --color1: rgb(86, 119, 185);
-    --color2: rgba(86, 119, 185, 0.5);
+    --color2: rgba(66, 99, 166, 0.5);
     /* #ffbfca */
 }
 
@@ -174,7 +174,7 @@ nav a.active{
 .mobile-nav{
     position: fixed;
     top: 9%;
-    left: 100%;
+    right: 100%;
     width: 100%;
     min-height: 100vh;
     display: block;
@@ -184,7 +184,8 @@ nav a.active{
     transition: 0.4s;
 }
 .mobile-nav.is-active{
-    left: 0;
+    right: 1%;
+    width: 50%;
 }
 .mobile-nav a{
     display: block;
@@ -193,7 +194,7 @@ nav a.active{
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
-    background-color: var(--color2);
+    background-color: var(--color1);
     color: white;
     text-decoration: none;
 }
